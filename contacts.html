@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Manimo - Animation YouTuber</title>
+  <title>Contact - Manimo</title>
   <style>
     body {
       --background-color: #111;
@@ -41,59 +41,12 @@
       text-decoration: none;
     }
 
-    .most-popular-button {
-      display: block;
-      text-align: center;
-      margin-top: 40px;
+    .contact-item {
+      margin-top: 20px;
     }
 
-    .most-popular-button a {
-      display: inline-block;
-      width: 150px;
-      height: 50px;
-      border-radius: 10px;
-      border: 1px solid #03045e;
-      position: relative;
-      overflow: hidden;
-      transition: all 0.5s ease-in;
-      z-index: 1;
-      background-color: #F2CD5C;
-      color: var(--text-color);
-      text-decoration: none;
-      font-size: 18px;
-    }
-
-    .most-popular-button a::before,
-    .most-popular-button a::after {
-      content: '';
-      position: absolute;
-      top: 0;
-      width: 0;
-      height: 100%;
-      transform: skew(15deg);
-      transition: all 0.5s;
-      overflow: hidden;
-      z-index: -1;
-    }
-
-    .most-popular-button a::before {
-      left: -10px;
-      background: #F2CD5C;
-    }
-
-    .most-popular-button a::after {
-      right: -10px;
-      background: #F2921D;
-    }
-
-    .most-popular-button a:hover::before,
-    .most-popular-button a:hover::after {
-      width: 58%;
-    }
-
-    .most-popular-button a:hover {
-      color: #e3e3e3;
-      transition: 0.3s;
+    .contact-item p {
+      margin: 0;
     }
 
     .switch {
@@ -149,19 +102,21 @@
 </head>
 <body>
   <div class="container">
-    <h1>Manimo</h1>
+    <h1>Contact</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Me</a>
+    </nav>
+    <div class="contact-item">
+      <p>Email: leonleons12342020@gmail.com</p>
+    </div>
+    <div class="contact-item">
+      <p>Discord: manimo1#6798</p>
+    </div>
     <label class="switch">
       <input type="checkbox">
       <span class="slider"></span>
     </label>
-    <nav>
-      <a href="https://www.youtube.com/@manimo1/featured">Youtube channel</a>
-      <a href="about.html">About Me</a>
-      <a href="contacts.html">Contacts</a>
-    </nav>
-    <div class="most-popular-button">
-      <a href="https://www.youtube.com/watch?v=uLDHG6k-NpE">Most Popular Video</a>
-    </div>
   </div>
 
   <script>
