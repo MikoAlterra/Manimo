@@ -48,11 +48,52 @@
     }
 
     .most-popular-button a {
-      background-color: #FF6000;
+      display: inline-block;
+      width: 150px;
+      height: 50px;
+      border-radius: 10px;
+      border: 1px solid #03045e;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.5s ease-in;
+      z-index: 1;
+      background-color: #F2CD5C;
       color: var(--text-color);
-      padding: 10px 20px;
-      border-radius: 4px;
       text-decoration: none;
+      font-size: 18px;
+    }
+
+    .most-popular-button a::before,
+    .most-popular-button a::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      width: 0;
+      height: 100%;
+      transform: skew(15deg);
+      transition: all 0.5s;
+      overflow: hidden;
+      z-index: -1;
+    }
+
+    .most-popular-button a::before {
+      left: -10px;
+      background: #F2CD5C;
+    }
+
+    .most-popular-button a::after {
+      right: -10px;
+      background: #F2921D;
+    }
+
+    .most-popular-button a:hover::before,
+    .most-popular-button a:hover::after {
+      width: 58%;
+    }
+
+    .most-popular-button a:hover {
+      color: #e3e3e3;
+      transition: 0.3s;
     }
 
     .switch {
@@ -115,7 +156,7 @@
     </label>
     <nav>
       <a href="https://www.youtube.com/@manimo1/featured">Youtube channel</a>
-      <a href="#">About me</a>
+      <a href="about.html">About me</a>
       <a href="#">Contacts</a>
     </nav>
     <div class="most-popular-button">
